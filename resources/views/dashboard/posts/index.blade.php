@@ -80,6 +80,10 @@
         <script>
             const success = document.querySelector('#success');
             const close = document.querySelector('#btnClose');
+
+            setTimeout(() => {
+                success.classList.add('d-none');
+            }, 5000);
         
             close.addEventListener('click', () => {
                 success.classList.add('d-none');
